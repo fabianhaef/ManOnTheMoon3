@@ -1,0 +1,161 @@
+:root {
+  --background: rgba(52,52,52,0.7);
+  --text: rgba(235,235,235,1);
+  --text-secondary: rgba(203,203,203,1);
+  --background-gradient: -webkit-linear-gradient(90.38deg, #F27A62 0%, #F13D59 100.11%);
+}
+
+*, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.background-image {
+  position: absolute;
+  height: 100vh;
+  z-index: -2;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.title-full {
+  margin-top: -20px;
+  font-size: 48px;
+  line-height: 48px;
+  opacity: 0.5;
+  color: var(--text);
+  z-index: 1;
+}
+
+.title-outline {
+  margin-top: -48px;
+  margin-left: 4px;
+  font-size: 48px;
+  line-height: 48px;
+  opacity: 0.5;
+  background: -webkit-linear-gradient(90.38deg, #F27A62 0%, #F13D59 100.11%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -1;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text);
+  padding-bottom: 70px;
+}
+
+.login {
+  margin: 0 auto;
+  max-height: 416px;
+  max-width: 424px;
+  border-radius: 5px;
+  background: var(--background);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  padding: 64px;
+}
+
+.login > h3 {
+  font-size: 24px;
+  padding-bottom: 24px;
+}
+
+.label {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-bottom: 4px;
+}
+
+/*
+input:focus,
+input:active {
+    border-color: transparent;
+    outline: none;
+}
+*/
+
+.input-field {
+  border-radius: 5px;
+  width: 412px;
+  height: 40px;
+  border: 1px solid var(--text);
+  background: transparent;
+  filter: none;
+  transition: all 0.1s ease-in-out;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  padding-left: 10px;
+}
+
+.input-field:focus,
+.input-field:active {
+  color: var(--text);
+  background: var(--background);
+}
+
+
+button:focus,
+button:active,
+input:focus,
+input:active {
+    border-color: transparent;
+    outline: none;
+}
+
+
+.submit-button {
+  margin-top: 12px;
+  height: 40px;
+  width: 424px;
+  border-radius: 5px;
+  border: none;
+}
+
+.submit-button:hover,
+.submit-button:active{
+  background: var(--background-gradient);
+  color: var(--text);
+  
+}
+
+.submit-button:active {
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  text-decoration: none;
+}
+
+.register-link {
+  padding-top: 4px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: var(--text);
+}
